@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid black;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-primary .color-white,
+.btn-primary .color-white a {
+  color: white !important;
+  text-decoration: none;
+}
+.btn-secondary .color-white,
+.btn-secondary .color-white a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.trash {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trash a {
+  font-size: 20px;
+}

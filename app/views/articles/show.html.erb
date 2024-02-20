@@ -1,0 +1,12 @@
+<div class="trash">
+  <h2><%= @article.title %></h2>
+  <%= link_to article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+    <i class="fa-solid fa-trash"></i>
+  <% end %>
+</div>
+
+<div class="article-details">
+  <p><%= @article.content %></p>
+</div>
+<button type="button" class="btn btn-secondary"><%= link_to "Edit task", edit_article_path, class: "color-white" %></button>
+<button type="button" class="btn btn-primary"><%= link_to "Back to list", articles_path, class: "color-white" %></button>
